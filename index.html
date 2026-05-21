@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="the FRONT bar — Praça das Flores 44, Lisboa. Cocktail bar, listening space, gallery, terrace. There's more here than meets the eye.">
+  <meta name="keywords" content="the FRONT bar, Lisboa, Lisbon bar, cocktails, Praça das Flores, speakeasy, terrace, kitchen rental">
+  <meta property="og:title" content="the FRONT bar — Lisboa">
+  <meta property="og:description" content="There's more here than meets the eye. Cocktail bar, listening space, gallery, terrace.">
+  <meta property="og:image" content="images/hero-cocktails.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>the FRONT bar — Praça das Flores, Lisboa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ═══ NAVIGATION ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#the-space" class="nav__logo" aria-label="the FRONT bar — home">
+      <span class="logo-the">the</span>
+      <span class="logo-front">FRONT</span>
+      <span class="logo-bar">bar</span>
+    </a>
+
+    <ul class="nav__links">
+      <li><a href="#the-space" data-lang-en>The Space</a><a href="#the-space" data-lang-pt>O Espaço</a></li>
+      <li><a href="#speakeasy">Speakeasy</a></li>
+      <li><a href="#terrace" class="nav-star" data-lang-en>Terrace ★</a><a href="#terrace" class="nav-star" data-lang-pt>Esplanada ★</a></li>
+      <li><a href="#music" data-lang-en>Music</a><a href="#music" data-lang-pt>Música</a></li>
+      <li><a href="#cocktails">Cocktails</a></li>
+      <li><a href="#ao-lado">Ao Lado</a></li>
+      <li><a href="#our-people" data-lang-en>People</a><a href="#our-people" data-lang-pt>Pessoas</a></li>
+      <li><a href="#kitchen" class="nav-star" data-lang-en>Kitchen ★</a><a href="#kitchen" class="nav-star" data-lang-pt>Cozinha ★</a></li>
+    </ul>
+
+    <div class="nav__right">
+      <div class="nav__lang">
+        <button id="lang-en" class="active" onclick="setLang('en')">EN</button>
+        <span style="opacity:0.2">/</span>
+        <button id="lang-pt" onclick="setLang('pt')">PT</button>
+      </div>
+      <a href="#terrace" class="btn btn--light nav__reserve" data-lang-en>Reserve</a>
+      <a href="#terrace" class="btn btn--light nav__reserve" data-lang-pt>Reservar</a>
+    </div>
+
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" id="mobile-menu" role="menu">
+    <a href="#the-space" onclick="closeMobile()" data-lang-en>The Space</a>
+    <a href="#the-space" onclick="closeMobile()" data-lang-pt>O Espaço</a>
+    <a href="#speakeasy" onclick="closeMobile()">Speakeasy</a>
+    <a href="#terrace" onclick="closeMobile()" data-lang-en>Terrace ★</a>
+    <a href="#terrace" onclick="closeMobile()" data-lang-pt>Esplanada ★</a>
+    <a href="#music" onclick="closeMobile()" data-lang-en>Music</a>
+    <a href="#music" onclick="closeMobile()" data-lang-pt>Música</a>
+    <a href="#cocktails" onclick="closeMobile()">Cocktails</a>
+    <a href="#ao-lado" onclick="closeMobile()">Ao Lado</a>
+    <a href="#our-people" onclick="closeMobile()" data-lang-en>Our People</a>
+    <a href="#our-people" onclick="closeMobile()" data-lang-pt>As Pessoas</a>
+    <a href="#exhibit" onclick="closeMobile()" data-lang-en>Exhibit</a>
+    <a href="#exhibit" onclick="closeMobile()" data-lang-pt>Expõe</a>
+    <a href="#kitchen" onclick="closeMobile()" data-lang-en>Kitchen ★</a>
+    <a href="#kitchen" onclick="closeMobile()" data-lang-pt>Cozinha ★</a>
+    <div class="mobile-lang">
+      <button id="mlang-en" class="active" onclick="setLang('en')">English</button>
+      <button id="mlang-pt" onclick="setLang('pt')">Português</button>
+    </div>
+  </div>
+
+
+  <!-- ═══ 1. THE SPACE — HERO ═══════════════════════════════ -->
+  <section id="the-space" aria-label="The Space">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__wordmark" aria-label="the FRONT bar">
+        <span class="wm-the">the</span>
+        <span class="wm-front">FRONT</span>
+        <span class="wm-bar">bar</span>
+      </div>
+
+      <p class="hero__location">Praça das Flores, Lisboa</p>
+
+      <p class="hero__tagline" data-lang-en>There's more here than meets the eye.</p>
+      <p class="hero__tagline" data-lang-pt>Há mais aqui do que parece à primeira vista.</p>
+
+      <p class="hero__body" data-lang-en>
+        On a quiet square in Lisbon, behind a door that doesn't ask for attention, something worth finding is happening.
+        the FRONT bar is a cocktail bar, a listening space, a gallery, a terrace, a window to the street. Come in.
+      </p>
+      <p class="hero__body" data-lang-pt>
+        Numa praça tranquila de Lisboa, por trás de uma porta que não pede atenção, acontece algo que vale a pena encontrar.
+        Entra. Fica. Explora o que está lá atrás.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="https://umai.io" target="_blank" rel="noopener" class="btn btn--light" data-lang-en>Book a Table</a>
+        <a href="https://umai.io" target="_blank" rel="noopener" class="btn btn--light" data-lang-pt>Reservar uma Mesa</a>
+        <a href="#terrace" class="btn btn--light" data-lang-en>Reserve the Terrace</a>
+        <a href="#terrace" class="btn btn--light" data-lang-pt>Reservar a Esplanada</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ═══ 2. THE SPEAKEASY ══════════════════════════════════ -->
+  <section id="speakeasy" class="section" aria-label="The Speakeasy">
+    <div class="speakeasy__bg" aria-hidden="true"></div>
+    <div class="speakeasy__circle" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="speakeasy__inner fade-in">
+        <div class="speakeasy__tag" data-lang-en>The Listening Bar</div>
+        <div class="speakeasy__tag" data-lang-pt>O Listening Bar</div>
+
+        <h2 class="speakeasy__title" data-lang-en>something hidden</h2>
+        <h2 class="speakeasy__title" data-lang-pt>algo escondido</h2>
+
+        <div class="speakeasy__divider"></div>
+
+        <div class="body-text speakeasy__body" data-lang-en>
+          <p>At the back, there's another room.</p>
+          <p>Dimmer. Quieter. Burgundy walls and a different kind of quiet — the kind that isn't empty. It has its own atmosphere entirely, its own pace, its own sense of time. The kind of place that only reveals itself to those who stay a little longer.</p>
+          <p>No sign. No separate entrance. You won't find it from the street. You'll find it by going further in.</p>
+          <p>No bookings. No menus at the door. Just the feeling of having discovered something.</p>
+        </div>
+
+        <div class="body-text speakeasy__body" data-lang-pt>
+          <p>Lá no fundo, há outra sala.</p>
+          <p>Mais sombria. Mais silenciosa. Com uma atmosfera própria, inteiramente sua. O tipo de sítio que só se revela a quem fica um pouco mais tempo.</p>
+          <p>A luz baixa. O som escolhido. Nenhum menu à porta.</p>
+          <p>Só a sensação de ter encontrado algo.</p>
+        </div>
+
+        <p class="speakeasy__no-bookings" data-lang-en>No reservations. Only discovered.</p>
+        <p class="speakeasy__no-bookings" data-lang-pt>Sem reservas. Só se descobre.</p>
+      </div>
+
+      <div style="position: absolute; right: clamp(1.5rem, 8vw, 8rem); bottom: 4rem; opacity: 0.18; pointer-events: none; display: none;" class="speakeasy__corner-img" aria-hidden="true">
+        <img src="images/speakeasy-corridor.jpg" alt="" style="width: 200px; height: 280px; object-fit: cover;">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ 3. PRIVATE SUMMER TERRACE ★ ══════════════════════ -->
+  <section id="terrace" class="section section--cream" aria-label="Private Summer Terrace">
+    <div class="container">
+
+      <div class="terrace__header fade-in">
+        <p class="section-label" data-lang-en>Private Summer Terrace ★</p>
+        <p class="section-label" data-lang-pt>Esplanada de Verão Privada ★</p>
+        <h2 data-lang-en>The Terrace</h2>
+        <h2 data-lang-pt>A Esplanada</h2>
+        <p class="terrace__subline" data-lang-en>Overlooking Praça das Flores. Yours for the evening.</p>
+        <p class="terrace__subline" data-lang-pt>Com vista para a Praça das Flores. Toda sua para a noite.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="fade-in">
+          <div class="body-text terrace__body" data-lang-en>
+            <p>Up a flight of stairs, past the noise of the city, there's a terrace with open sky above it and green on every side.</p>
+            <p>Lush and private. Lit by warm light as the evening settles in. The sound of Praça das Flores below — but up here, it's yours.</p>
+            <p>The Private Summer Terrace holds up to <strong>50 guests standing</strong> and up to <strong>25 seated</strong> — a space that feels intimate whether you fill it or not.</p>
+            <p>It works for a birthday dinner, a summer celebration, a product launch with taste, or an evening that simply deserves more than a restaurant table.</p>
+            <p>The terrace is bookable exclusively. No shared evenings. No half-measures.</p>
+            <p>All details — including availability — are shared on direct enquiry.</p>
+          </div>
+
+          <div class="body-text terrace__body" data-lang-pt>
+            <p>Verde por todo o lado. Céu aberto. Um recanto escondido acima de uma das praças mais bonitas de Lisboa.</p>
+            <p>A esplanada privada tem capacidade para até <strong>25 pessoas sentadas</strong> e até <strong>50 em pé</strong> — o cenário certo para aniversários, jantares íntimos, eventos de marca e celebrações que merecem ser recordadas.</p>
+            <p>Não há listas de preços aqui. Cada evento é tratado à medida. Disponibilidade, detalhes e tudo o mais partilhamos em contacto directo.</p>
+          </div>
+
+          <div class="terrace__capacity">
+            <div class="terrace__cap-item">
+              <span class="terrace__cap-number">50</span>
+              <span class="terrace__cap-label" data-lang-en>standing</span>
+              <span class="terrace__cap-label" data-lang-pt>em pé</span>
+            </div>
+            <div class="terrace__cap-item">
+              <span class="terrace__cap-number">25</span>
+              <span class="terrace__cap-label" data-lang-en>seated</span>
+              <span class="terrace__cap-label" data-lang-pt>sentados</span>
+            </div>
+          </div>
+
+          <ul class="terrace__occasions">
+            <li data-lang-en>Private birthdays</li>
+            <li data-lang-en>Intimate dinners</li>
+            <li data-lang-en>Brand events &amp; product launches</li>
+            <li data-lang-en>Corporate celebrations</li>
+            <li data-lang-en>Cultural evenings &amp; private concerts</li>
+            <li data-lang-pt>Aniversários privados</li>
+            <li data-lang-pt>Jantares íntimos</li>
+            <li data-lang-pt>Eventos de marca</li>
+            <li data-lang-pt>Celebrações corporativas</li>
+            <li data-lang-pt>Noites culturais</li>
+          </ul>
+        </div>
+
+        <div class="terrace__image fade-in">
+          <img src="images/facade-exterior.jpg" alt="the FRONT bar exterior — Praça das Flores" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Enquiry Form -->
+      <div class="enquiry-form fade-in" style="margin-top: 4rem;">
+        <h3 data-lang-en>Terrace Enquiry</h3>
+        <h3 data-lang-pt>Pedido de Reserva da Esplanada</h3>
+        <form id="terrace-form" action="mailto:noemi@thefrontbar-lisboa.com" method="post" enctype="text/plain" onsubmit="handleForm(event, 'terrace')">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="t-name" data-lang-en>Name</label>
+              <label for="t-name" data-lang-pt>Nome</label>
+              <input type="text" id="t-name" name="name" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="t-email">Email</label>
+              <input type="email" id="t-email" name="email" placeholder="your@email.com" required autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="t-date" data-lang-en>Date</label>
+              <label for="t-date" data-lang-pt>Data</label>
+              <input type="date" id="t-date" name="date">
+            </div>
+            <div class="form-field">
+              <label for="t-guests" data-lang-en>Number of guests</label>
+              <label for="t-guests" data-lang-pt>Número de convidados</label>
+              <input type="number" id="t-guests" name="guests" placeholder="e.g. 30" min="1" max="50">
+            </div>
+            <div class="form-field form-field--full">
+              <label for="t-message" data-lang-en>Tell us about your event</label>
+              <label for="t-message" data-lang-pt>Conta-nos sobre o teu evento</label>
+              <textarea id="t-message" name="message" rows="4" placeholder="Occasion, preferences, any other details..."></textarea>
+            </div>
+          </div>
+          <div style="margin-top: 1.5rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+            <button type="submit" class="btn btn--dark" data-lang-en>Send Enquiry</button>
+            <button type="submit" class="btn btn--dark" data-lang-pt>Enviar Pedido</button>
+            <p class="form-note" data-lang-en>We'll respond within 24 hours. No pricing listed — all details shared on direct enquiry.</p>
+            <p class="form-note" data-lang-pt>Respondemos em 24 horas. Disponibilidade e preços partilhados em contacto directo.</p>
+          </div>
+        </form>
+        <div class="form-success" id="terrace-success">
+          <p data-lang-en>Thank you. We'll be in touch shortly.</p>
+          <p data-lang-pt>Obrigado. Entraremos em contacto em breve.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ 4. LOCATION ═══════════════════════════════════════ -->
+  <section id="location" class="section section--dark" aria-label="Location">
+    <div class="container">
+      <div class="grid-2">
+        <div class="fade-in">
+          <p class="section-label" data-lang-en>Find us</p>
+          <p class="section-label" data-lang-pt>Como chegar</p>
+
+          <blockquote class="location__editorial" data-lang-en>
+            Praça das Flores is one of Lisbon's quietest and most loved squares. the FRONT bar belongs here.
+          </blockquote>
+          <blockquote class="location__editorial" data-lang-pt>
+            A Praça das Flores é uma das praças mais silenciosas e mais queridas de Lisboa. the FRONT bar pertence aqui.
+          </blockquote>
+
+          <div class="location__info">
+            <div class="location__item">
+              <span class="location__item-label" data-lang-en>Address</span>
+              <span class="location__item-label" data-lang-pt>Morada</span>
+              <span class="location__item-value">
+                Praça das Flores 44<br>
+                1200-192 Lisboa, Portugal
+              </span>
+            </div>
+            <div class="location__item">
+              <span class="location__item-label" data-lang-en>Phone</span>
+              <span class="location__item-label" data-lang-pt>Telefone</span>
+              <span class="location__item-value">
+                <a href="tel:+351912280037" style="color: var(--cream);">+351 912 280 037</a>
+              </span>
+            </div>
+            <div class="location__item">
+              <span class="location__item-label" data-lang-en>Opening Hours</span>
+              <span class="location__item-label" data-lang-pt>Horário</span>
+              <span class="location__item-value" data-lang-en>
+                Tuesday — Sunday<br>
+                12:00 — 00:00<br>
+                <em style="opacity:0.5; font-size:0.8em;">Monday closed</em>
+              </span>
+              <span class="location__item-value" data-lang-pt>
+                Terça — Domingo<br>
+                12:00 — 00:00<br>
+                <em style="opacity:0.5; font-size:0.8em;">Fechado à Segunda</em>
+              </span>
+            </div>
+            <div class="location__item">
+              <a href="https://maps.google.com/?q=Praça+das+Flores+44,+Lisboa" target="_blank" rel="noopener" class="btn btn--light" style="margin-top: 0.5rem;" data-lang-en>Get Directions</a>
+              <a href="https://maps.google.com/?q=Praça+das+Flores+44,+Lisboa" target="_blank" rel="noopener" class="btn btn--light" style="margin-top: 0.5rem;" data-lang-pt>Como Chegar</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 1rem;" class="fade-in">
+          <div class="location__map">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.2!2d-9.1556!3d38.7132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934030de57f29%3A0x7f9a3e44a3a3a3a3!2sPra%C3%A7a%20das%20Flores%2044%2C%20Lisboa!5e0!3m2!1sen!2spt!4v1716000000000!5m2!1sen!2spt"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="the FRONT bar location map"
+            aria-label="Map showing the FRONT bar at Praça das Flores 44, Lisboa">
+          </iframe>
+          </div>
+          <img src="images/location-facade.jpg" alt="the FRONT bar — Praça das Flores 44" loading="lazy" style="width: 100%; height: 180px; object-fit: cover; object-position: center 60%; opacity: 0.85;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ 5. MUSIC ══════════════════════════════════════════ -->
+  <section id="music" class="section" style="background: var(--near-black); position: relative; overflow: hidden;" aria-label="Music">
+    <div class="music__bg" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="music__inner">
+        <div class="fade-in">
+          <h2 class="music__title" data-lang-en>the sound</h2>
+          <h2 class="music__title" data-lang-pt>o som</h2>
+        </div>
+
+        <div class="fade-in">
+          <p class="section-label" style="margin-bottom: 2rem;" data-lang-en>Sonic Identity</p>
+          <p class="section-label" style="margin-bottom: 2rem;" data-lang-pt>Identidade Sonora</p>
+
+          <div class="body-text music__body" data-lang-en>
+            <p>Music here isn't background. It's not a programme. It's the atmosphere itself.</p>
+            <p>Resident DJs and guest selectors who know how to read a room — when to hold back, when to lift it, when to drop something unexpected and watch the conversation shift.</p>
+            <p>No set list. No genre tag. Just the right record, at the right moment, played at the right volume.</p>
+            <p>Vinyl-led. Mood-led. Some nights are slow and deep. Others build. You'll feel the difference when you're in it.</p>
+          </div>
+
+          <div class="body-text music__body" data-lang-pt>
+            <p>A música aqui não é um programa. É a atmosfera.</p>
+            <p>DJs residentes e convidados que lêem a sala, que baixam a agulha no momento certo, e que sabem a diferença entre fundo e presença.</p>
+            <p>Não há lista de temas. Não há género fixo. Só o disco certo, na hora certa.</p>
+            <p>Às vezes suave. Às vezes inesperado. Sempre intencional.</p>
+          </div>
+
+          <a href="https://www.instagram.com/thefrontbarlx" target="_blank" rel="noopener" class="music__ig">
+            <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+            @thefrontbarlx
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ 6. COCKTAILS ══════════════════════════════════════ -->
+  <section id="cocktails" class="section section--dark" aria-label="Cocktails">
+    <div class="container">
+
+      <div class="cocktails__intro fade-in">
+        <p class="section-label" data-lang-en>The Menu</p>
+        <p class="section-label" data-lang-pt>O Menu</p>
+        <h2 class="section-title" style="color: var(--cream); margin: 1.5rem 0;" data-lang-en>cocktails</h2>
+        <h2 class="section-title" style="color: var(--cream); margin: 1.5rem 0;" data-lang-pt>cocktails</h2>
+        <p data-lang-en>Every drink here started as a question. The answers took time — rounds of revision, quiet disagreements, late nights at the bar when the bar was closed. What made it onto the menu earned its place.</p>
+        <p data-lang-pt>Cada copo tem uma intenção. Trabalhamos com ingredientes que têm história, técnicas que têm tempo, e bebidas que têm nome porque merecem tê-lo.</p>
+      </div>
+
+      <!-- House Signatures -->
+      <p class="cocktails__section-label fade-in" data-lang-en>House Signatures</p>
+      <p class="cocktails__section-label fade-in" data-lang-pt>House Signatures</p>
+
+      <div class="cocktails__grid">
+
+        <div class="cocktail-card fade-in">
+          <div class="cocktail-card__img">
+            <img src="images/cocktail-espresso.jpg" alt="Espresso Martini — the FRONT bar" loading="lazy">
+          </div>
+          <h3 class="cocktail-card__name">Coolest Agave</h3>
+          <div class="cocktail-card__divider"></div>
+          <p class="cocktail-card__desc" data-lang-en>Tequila reposado, cold-pressed cucumber, lime, a whisper of salt and heat. It tastes like the first hour of a good evening — clear, clean, quietly confident.</p>
+          <p class="cocktail-card__desc" data-lang-pt>Agave limpo, frio até ao osso. Uma acidez que aparece devagar e fica. Para quem gosta de perceber o que está a beber.</p>
+        </div>
+
+        <div class="cocktail-card fade-in" style="transition-delay: 0.15s">
+          <div class="cocktail-card__img">
+            <img src="images/cocktail-martini.jpg" alt="Dirty Martini — the FRONT bar" loading="lazy">
+          </div>
+          <h3 class="cocktail-card__name">Vino Nero</h3>
+          <div class="cocktail-card__divider"></div>
+          <p class="cocktail-card__desc" data-lang-en>Dark fruit and smoky mezcal pulled together with a touch of bittersweet liqueur and a curl of orange peel. Complex without trying to be. It arrives and you know this one is going to take a while.</p>
+          <p class="cocktail-card__desc" data-lang-pt>Escuro, fundo, inesperadamente suave. Começa como vinho, termina como outra coisa. Fica-se sem palavras — e pede-se outro.</p>
+        </div>
+
+        <div class="cocktail-card fade-in" style="transition-delay: 0.3s">
+          <div class="cocktail-card__img">
+            <img src="images/cocktail-highball.jpg" alt="Highball cocktail — the FRONT bar" loading="lazy">
+          </div>
+          <h3 class="cocktail-card__name">Paloma</h3>
+          <div class="cocktail-card__divider"></div>
+          <p class="cocktail-card__desc" data-lang-en>Blanco tequila, fresh pink grapefruit, a precise amount of honey, sparkling water poured cold. Some drinks are made to be lingered over. This one is made to be enjoyed — no patience required.</p>
+          <p class="cocktail-card__desc" data-lang-pt>Cítrico e leve como devia ser. A toranja faz o trabalho, o sal equilibra tudo. O cocktail que faz com que qualquer tarde pareça mais longa.</p>
+        </div>
+
+      </div>
+
+      <!-- Classics -->
+      <div class="cocktails__classics fade-in">
+        <div class="cocktails__classics-text">
+          <h3 data-lang-en>Classic Cocktails</h3>
+          <h3 data-lang-pt>Cocktails Clássicos</h3>
+          <p data-lang-en>A curated selection of the drinks that made the world what it is. Everything you know, made the way it should be made — with good ice, good spirits, and no shortcuts.</p>
+          <p data-lang-pt>Uma selecção cuidada. Tudo o que já conheces, feito como deve ser feito.</p>
+        </div>
+        <div style="flex-shrink: 0;">
+          <img src="images/cocktail-pour.jpg" alt="Bartender crafting cocktails" loading="lazy" style="width: 280px; height: 320px; object-fit: cover;">
+        </div>
+      </div>
+
+      <div class="cocktails__cta fade-in">
+        <a href="#" class="btn btn--light" data-lang-en>Full Menu (PDF)</a>
+        <a href="#" class="btn btn--light" data-lang-pt>Menu Completo (PDF)</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ 7. AO LADO ════════════════════════════════════════ -->
+  <section id="ao-lado" class="section section--cream" aria-label="Ao Lado">
+    <div class="container">
+      <div class="aolado__inner">
+
+        <div class="aolado__image fade-in">
+          <img src="images/aolado-cocktail.jpg" alt="Frozen cocktail from the ao lado window" loading="lazy">
+          <img src="images/cocktail-lime.jpg" alt="Cold cocktail with lime" loading="lazy" style="margin-top: 1rem; height: 180px; width: 100%; object-fit: cover; opacity: 0.8;">
+        </div>
+
+        <div class="fade-in">
+          <span class="aolado__tag" data-lang-en>by the FRONT bar</span>
+          <span class="aolado__tag" data-lang-pt>by the FRONT bar</span>
+          <h2 class="aolado__title">ao lado</h2>
+          <p class="aolado__subline" data-lang-en>Frozen cocktails. To the square.</p>
+          <p class="aolado__subline" data-lang-pt>Cocktails frozen. Para a praça.</p>
+
+          <div class="body-text aolado__body" data-lang-en>
+            <p>On the side of the building, a window opens directly onto Praça das Flores.</p>
+            <p>No reservation. No table. No need to come inside. Step up to the window, order, and take it with you to the square.</p>
+            <p>It's the same care in the glass — just handed to you from the other side of a wall, with the whole square in front of you.</p>
+            <p>For Tuesday evenings and slow Sunday afternoons. For the regulars who've been coming for years and the visitors who stumbled in from the Bairro.</p>
+          </div>
+
+          <div class="body-text aolado__body" data-lang-pt>
+            <p>Na lateral do edifício, abre-se uma janela para a Praça das Flores.</p>
+            <p>Sem reserva. Sem mesa. Só a praça, uma bebida bem fria, e as melhores pessoas para ver passar em Lisboa.</p>
+            <p>É o bairro a funcionar como deve. Simples assim.</p>
+          </div>
+
+          <ul class="aolado__menu">
+            <li>
+              <span class="drink-name">Frozen Margarita</span>
+              <span class="drink-desc" data-lang-en>sharp, icy, made with blanco tequila and fresh lime</span>
+              <span class="drink-desc" data-lang-pt>tequila blanco e lima fresca</span>
+            </li>
+            <li>
+              <span class="drink-name">Frozen Espresso Martini</span>
+              <span class="drink-desc" data-lang-en>cold and dark and better than you'd expect from a window</span>
+              <span class="drink-desc" data-lang-pt>frio e escuro e melhor do que se esperaria de uma janela</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ 8. OUR PEOPLE ═════════════════════════════════════ -->
+  <section id="our-people" class="section section--dark" aria-label="Our People">
+    <div class="container">
+
+      <div class="people__inner">
+        <div class="fade-in">
+          <p class="section-label" data-lang-en>Community</p>
+          <p class="section-label" data-lang-pt>Comunidade</p>
+          <h2 class="people__title" data-lang-en>the people</h2>
+          <h2 class="people__title" data-lang-pt>as pessoas</h2>
+
+          <div class="body-text people__body" data-lang-en>
+            <p>Artists and musicians. Neighbourhood regulars who've been here since before the square was discovered. Internationals who came for a week and stayed for a year. Chefs after service. Late-night first-timers who'll be back on Saturday.</p>
+            <p>No curated lifestyle. No designated cool. Just the kind of mix that happens when a place is genuinely good and doesn't try too hard to be anything else.</p>
+          </div>
+
+          <div class="body-text people__body" data-lang-pt>
+            <p>Artistas. Músicos. Locais de sempre. Chefs. Noctívagos habituais. Primeiras visitas curiosas.</p>
+            <p>Nada de lifestyle curado. Só caras reais, conversas a sério, e a energia de uma cidade que sabe estar acordada.</p>
+          </div>
+
+          <p class="people__sign" data-lang-en>the FRONT bar belongs to everyone who walks through the door.</p>
+          <p class="people__sign" data-lang-pt>the FRONT bar pertence a toda a gente que entra pela porta.</p>
+        </div>
+
+        <div class="fade-in">
+          <img src="images/people-art.jpg" alt="Guests at the FRONT bar gallery evening" loading="lazy" style="width: 100%; height: 420px; object-fit: cover;">
+        </div>
+      </div>
+
+      <div class="people__grid fade-in">
+        <div class="people__grid-item">
+          <img src="images/people-candid.jpg" alt="Candid moment at the FRONT bar" loading="lazy">
+        </div>
+        <div class="people__grid-item">
+          <img src="images/cocktail-coaster.jpg" alt="Cocktail with the FRONT bar coaster" loading="lazy">
+        </div>
+        <div class="people__grid-item">
+          <img src="images/people-bar.jpg" alt="Hands sharing food and drinks at the FRONT bar" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ 9. EXHIBIT WITH US ════════════════════════════════ -->
+  <section id="exhibit" class="section" style="background: var(--near-black);" aria-label="Exhibit With Us">
+    <div class="container">
+      <div class="exhibit__inner">
+
+        <div class="fade-in">
+          <p class="section-label" data-lang-en>Open Call</p>
+          <p class="section-label" data-lang-pt>Candidatura Aberta</p>
+          <h2 class="exhibit__title" data-lang-en>exhibit with us</h2>
+          <h2 class="exhibit__title" data-lang-pt>expõe connosco</h2>
+
+          <div class="body-text exhibit__body" data-lang-en>
+            <p>The walls here don't stay the same for long.</p>
+            <p>the FRONT bar is a living gallery — one that changes with the people who make it. The work rotates. New voices come in. The exhibitions stay up long enough for people to actually look at them, in the way you look at things properly when you're on your second drink and the night is still young.</p>
+            <p>If your work belongs in a room where people gather, drink well, and pay attention — we'd like to hear from you.</p>
+          </div>
+
+          <div class="body-text exhibit__body" data-lang-pt>
+            <p>the FRONT bar é uma galeria viva.</p>
+            <p>As paredes mudam. O trabalho roda. Novas vozes são sempre bem-vindas. Se o teu trabalho pertence a uma sala onde as pessoas se juntam, bebem bem e prestam atenção — queremos saber de ti.</p>
+          </div>
+
+          <ul class="exhibit__formats" data-lang-en>
+            <li>Paintings</li>
+            <li>Photography</li>
+            <li>Prints</li>
+            <li>Wall-suitable work</li>
+          </ul>
+          <ul class="exhibit__formats" data-lang-pt>
+            <li>Pinturas</li>
+            <li>Fotografia</li>
+            <li>Impressões</li>
+            <li>Obras para paredes</li>
+          </ul>
+
+          <a href="mailto:jess@thefrontbar-lisboa.com?subject=Exhibition%20Application" class="btn btn--light" data-lang-en>Apply to Exhibit</a>
+          <a href="mailto:jess@thefrontbar-lisboa.com?subject=Candidatura%20a%20Exposição" class="btn btn--light" data-lang-pt>Candidatar-se</a>
+        </div>
+
+        <div class="exhibit__visual fade-in">
+          <div class="exhibit__frame">
+            <img src="images/atmosphere-flowers.jpg" alt="Atmospheric detail — the FRONT bar gallery" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ 10. KITCHEN RENTAL ★ ═════════════════════════════ -->
+  <section id="kitchen" class="section section--dark" aria-label="Kitchen Rental">
+    <div class="container">
+
+      <div class="kitchen__header fade-in">
+        <p class="section-label" data-lang-en>Professional Kitchen ★</p>
+        <p class="section-label" data-lang-pt>Cozinha Profissional ★</p>
+        <h2 data-lang-en>the kitchen</h2>
+        <h2 data-lang-pt>a cozinha</h2>
+        <p class="kitchen__subline" data-lang-en>A professional kitchen. Available for hire.</p>
+        <p class="kitchen__subline" data-lang-pt>Uma cozinha profissional. Disponível para aluguer.</p>
+      </div>
+
+      <div class="kitchen__grid">
+        <div class="fade-in">
+          <div class="body-text kitchen__body" data-lang-en>
+            <p>Behind the bar, there's a fully equipped professional kitchen. Available to people who know how to use one.</p>
+            <p>Built for pop-up chefs ready to take a concept public, supper clubs looking for a proper home, food brands shooting content or sampling new work, private caterers who need the right equipment, and culinary events that deserve more than a catered tent.</p>
+            <p>You bring the vision. The kitchen handles the rest.</p>
+            <p>The kitchen is available on an enquiry basis. All details shared directly — no pricing listed here.</p>
+          </div>
+
+          <div class="body-text kitchen__body" data-lang-pt>
+            <p>No coração de Lisboa, uma cozinha totalmente equipada à espera de quem sabe usá-la.</p>
+            <p>Disponível para chefs pop-up, supper clubs, marcas alimentares, catering privado e eventos culinários.</p>
+            <p>Não publicamos preços aqui. Cada utilização é diferente. Disponibilidade, especificações e tudo o mais partilhamos em contacto directo.</p>
+          </div>
+
+          <ul class="kitchen__for-whom">
+            <li data-lang-en>Pop-up chefs</li>
+            <li data-lang-en>Supper clubs</li>
+            <li data-lang-en>Food brands &amp; product development</li>
+            <li data-lang-en>Private caterers</li>
+            <li data-lang-en>Culinary event organisers</li>
+            <li data-lang-pt>Chefs pop-up</li>
+            <li data-lang-pt>Supper clubs</li>
+            <li data-lang-pt>Marcas alimentares</li>
+            <li data-lang-pt>Catering privado</li>
+            <li data-lang-pt>Organizadores de eventos culinários</li>
+          </ul>
+        </div>
+
+        <div class="fade-in">
+          <!-- Kitchen Enquiry Form -->
+          <div class="enquiry-form enquiry-form--dark">
+            <h3 data-lang-en>Kitchen Enquiry</h3>
+            <h3 data-lang-pt>Pedido de Aluguer de Cozinha</h3>
+            <form id="kitchen-form" action="mailto:noemi@thefrontbar-lisboa.com" method="post" enctype="text/plain" onsubmit="handleForm(event, 'kitchen')">
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="k-name" data-lang-en>Name</label>
+                  <label for="k-name" data-lang-pt>Nome</label>
+                  <input type="text" id="k-name" name="name" placeholder="Your name" required autocomplete="name">
+                </div>
+                <div class="form-field">
+                  <label for="k-email">Email</label>
+                  <input type="email" id="k-email" name="email" placeholder="your@email.com" required autocomplete="email">
+                </div>
+                <div class="form-field">
+                  <label for="k-type" data-lang-en>Type of use</label>
+                  <label for="k-type" data-lang-pt>Tipo de utilização</label>
+                  <input type="text" id="k-type" name="type" placeholder="Pop-up, supper club, filming...">
+                </div>
+                <div class="form-field">
+                  <label for="k-date" data-lang-en>Preferred dates</label>
+                  <label for="k-date" data-lang-pt>Datas pretendidas</label>
+                  <input type="text" id="k-date" name="dates" placeholder="e.g. June 2026">
+                </div>
+                <div class="form-field form-field--full">
+                  <label for="k-message" data-lang-en>Tell us about your project</label>
+                  <label for="k-message" data-lang-pt>Conta-nos sobre o teu projecto</label>
+                  <textarea id="k-message" name="message" rows="3" placeholder="Brief description of your concept and needs..."></textarea>
+                </div>
+              </div>
+              <div style="margin-top: 1.5rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                <button type="submit" class="btn btn--light" data-lang-en>Send Enquiry</button>
+                <button type="submit" class="btn btn--light" data-lang-pt>Enviar Pedido</button>
+                <p class="form-note" data-lang-en>All details shared on direct enquiry.</p>
+                <p class="form-note" data-lang-pt>Disponibilidade e detalhes em contacto directo.</p>
+              </div>
+            </form>
+            <div class="form-success" id="kitchen-success">
+              <p data-lang-en>Thank you. We'll be in touch shortly.</p>
+              <p data-lang-pt>Obrigado. Entraremos em contacto em breve.</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <img src="images/atmosphere-surface.jpg" alt="Bar surface detail" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; opacity: 0.6;">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__logo" aria-label="the FRONT bar">
+            <span class="logo-the">the</span>
+            <span class="logo-front">FRONT</span>
+            <span class="logo-bar">bar</span>
+          </div>
+          <p class="footer__tagline" data-lang-en>Start at the front.<br>Discover what's behind.</p>
+          <p class="footer__tagline" data-lang-pt>Começa na frente.<br>Descobre o que está lá atrás.</p>
+        </div>
+
+        <div class="footer__nav">
+          <div class="footer__nav-group">
+            <h4 data-lang-en>The Bar</h4>
+            <h4 data-lang-pt>O Bar</h4>
+            <ul>
+              <li><a href="#the-space" data-lang-en>The Space</a><a href="#the-space" data-lang-pt>O Espaço</a></li>
+              <li><a href="#speakeasy" data-lang-en>The Speakeasy</a><a href="#speakeasy" data-lang-pt>O Speakeasy</a></li>
+              <li><a href="#cocktails" data-lang-en>Cocktails</a><a href="#cocktails" data-lang-pt>Cocktails</a></li>
+              <li><a href="#ao-lado" data-lang-en>Ao Lado</a><a href="#ao-lado" data-lang-pt>Ao Lado</a></li>
+              <li><a href="#music" data-lang-en>Music</a><a href="#music" data-lang-pt>Música</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-group">
+            <h4 data-lang-en>Bookings</h4>
+            <h4 data-lang-pt>Reservas</h4>
+            <ul>
+              <li><a href="#terrace" data-lang-en>Private Terrace ★</a><a href="#terrace" data-lang-pt>Esplanada Privada ★</a></li>
+              <li><a href="#kitchen" data-lang-en>Kitchen Rental ★</a><a href="#kitchen" data-lang-pt>Aluguer de Cozinha ★</a></li>
+              <li><a href="#exhibit" data-lang-en>Exhibit With Us</a><a href="#exhibit" data-lang-pt>Expõe Connosco</a></li>
+              <li><a href="https://umai.io" target="_blank" rel="noopener" data-lang-en>Book a Table</a><a href="https://umai.io" target="_blank" rel="noopener" data-lang-pt>Reservar Mesa</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-group">
+            <h4 data-lang-en>Contact</h4>
+            <h4 data-lang-pt>Contacto</h4>
+            <ul>
+              <li><a href="tel:+351912280037">+351 912 280 037</a></li>
+              <li><a href="mailto:noemi@thefrontbar-lisboa.com">noemi@thefrontbar-lisboa.com</a></li>
+              <li><a href="https://www.instagram.com/thefrontbarlx" target="_blank" rel="noopener">@thefrontbarlx</a></li>
+              <li><a href="#location" data-lang-en>Praça das Flores 44</a><a href="#location" data-lang-pt>Praça das Flores 44</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p data-lang-en>© 2026 the FRONT bar — Praça das Flores 44, Lisboa</p>
+        <p data-lang-pt>© 2026 the FRONT bar — Praça das Flores 44, Lisboa</p>
+        <a href="https://www.instagram.com/thefrontbarlx" target="_blank" rel="noopener" class="footer__ig" aria-label="Instagram @thefrontbarlx">
+          <svg viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+          @thefrontbarlx
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══ JAVASCRIPT ════════════════════════════════════════ -->
+  <script>
+    // ── Scroll nav ──────────────────────────────────────────
+    const nav = document.getElementById('nav');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const s = window.scrollY;
+      if (s > 60) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+      lastScroll = s;
+    }, { passive: true });
+
+    // ── Mobile menu ─────────────────────────────────────────
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    burger.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      burger.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open);
+    });
+
+    function closeMobile() {
+      mobileMenu.classList.remove('open');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded', false);
+    }
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && !mobileMenu.contains(e.target)) {
+        closeMobile();
+      }
+    });
+
+    // ── Language toggle ─────────────────────────────────────
+    function setLang(lang) {
+      document.body.classList.toggle('lang-pt', lang === 'pt');
+
+      // Update EN buttons
+      document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+      document.getElementById('lang-pt').classList.toggle('active', lang === 'pt');
+
+      // Update mobile EN buttons
+      const mLen = document.getElementById('mlang-en');
+      const mLpt = document.getElementById('mlang-pt');
+      if (mLen) mLen.classList.toggle('active', lang === 'en');
+      if (mLpt) mLpt.classList.toggle('active', lang === 'pt');
+
+      // Store preference
+      try { localStorage.setItem('frontbar-lang', lang); } catch(e) {}
+
+      // Update html lang attr
+      document.documentElement.lang = lang === 'pt' ? 'pt' : 'en';
+    }
+
+    // Restore saved language
+    try {
+      const saved = localStorage.getItem('frontbar-lang');
+      if (saved === 'pt') setLang('pt');
+    } catch(e) {}
+
+    // ── Fade-in on scroll ────────────────────────────────────
+    const fadeEls = document.querySelectorAll('.fade-in');
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, {
+      threshold: 0.08,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    fadeEls.forEach(el => io.observe(el));
+
+    // ── Active nav link ──────────────────────────────────────
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav__links a');
+
+    const navIO = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const id = e.target.id;
+          navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    sections.forEach(s => navIO.observe(s));
+
+    // ── Form handling ────────────────────────────────────────
+    function handleForm(event, formId) {
+      event.preventDefault();
+      const form = event.target;
+      const successEl = document.getElementById(formId + '-success');
+
+      // Build mailto link
+      const formData = new FormData(form);
+      const subject = formId === 'terrace'
+        ? 'Terrace Enquiry — the FRONT bar'
+        : 'Kitchen Rental Enquiry — the FRONT bar';
+      const email = 'noemi@thefrontbar-lisboa.com';
+
+      let body = '';
+      for (const [key, value] of formData.entries()) {
+        if (value.trim()) {
+          body += `${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}\n`;
+        }
+      }
+
+      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+
+      // Show success state
+      if (successEl) {
+        form.style.display = 'none';
+        successEl.classList.add('visible');
+
+        // Reset after 5 seconds
+        setTimeout(() => {
+          form.reset();
+          form.style.display = 'block';
+          successEl.classList.remove('visible');
+        }, 5000);
+      }
+    }
+
+    // ── Smooth scroll polyfill for older Safari ─────────────
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = 64; // nav height
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+          closeMobile();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
