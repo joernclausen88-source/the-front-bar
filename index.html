@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://widget.letsumai.com/dist/embed.min.js" data-api-key="815e8524-3bea-45bf-a965-cd3dc1e12493" data-widget-type="reservation"></script>
 </head>
 
 <body>
@@ -33,6 +34,7 @@
       <li><a href="#terrace" class="nav-star" data-lang-en>Terrace ★</a><a href="#terrace" class="nav-star" data-lang-pt>Esplanada ★</a></li>
       <li><a href="#music" data-lang-en>Music</a><a href="#music" data-lang-pt>Música</a></li>
       <li><a href="#cocktails">Cocktails</a></li>
+      <li><a href="#menu" data-lang-en>Menu</a><a href="#menu" data-lang-pt>Menu</a></li>
       <li><a href="#ao-lado">Ao Lado</a></li>
       <li><a href="#our-people" data-lang-en>People</a><a href="#our-people" data-lang-pt>Pessoas</a></li>
       <li><a href="#kitchen" class="nav-star" data-lang-en>Kitchen ★</a><a href="#kitchen" class="nav-star" data-lang-pt>Cozinha ★</a></li>
@@ -97,17 +99,17 @@
       <p class="hero__tagline" data-lang-pt>Há mais aqui do que parece à primeira vista.</p>
 
       <p class="hero__body" data-lang-en>
-        On a quiet square in Lisbon, behind a door that doesn't ask for attention, something worth finding is happening.
+        On one of Lisbon's most charming and alive squares, behind a door that doesn't ask for attention, something worth finding is happening.
         the FRONT bar is a cocktail bar, a listening space, a gallery, a terrace, a window to the street. Come in.
       </p>
       <p class="hero__body" data-lang-pt>
-        Numa praça tranquila de Lisboa, por trás de uma porta que não pede atenção, acontece algo que vale a pena encontrar.
+        Numa das praças mais encantadoras e vivas de Lisboa, por trás de uma porta que não pede atenção, acontece algo que vale a pena encontrar.
         Entra. Fica. Explora o que está lá atrás.
       </p>
 
       <div class="hero__ctas">
-        <a href="https://umai.io" target="_blank" rel="noopener" class="btn btn--light" data-lang-en>Book a Table</a>
-        <a href="https://umai.io" target="_blank" rel="noopener" class="btn btn--light" data-lang-pt>Reservar uma Mesa</a>
+        <a href="#" onclick="umaiWidget.openWidget(); return false;" class="btn btn--light" data-lang-en>Book a Table</a>
+        <a href="#" onclick="umaiWidget.openWidget(); return false;" class="btn btn--light" data-lang-pt>Reservar uma Mesa</a>
         <a href="#terrace" class="btn btn--light" data-lang-en>Reserve the Terrace</a>
         <a href="#terrace" class="btn btn--light" data-lang-pt>Reservar a Esplanada</a>
       </div>
@@ -181,14 +183,15 @@
             <p>Lush and private. Lit by warm light as the evening settles in. The sound of Praça das Flores below — but up here, it's yours.</p>
             <p>The Private Summer Terrace holds up to <strong>50 guests standing</strong> and up to <strong>25 seated</strong> — a space that feels intimate whether you fill it or not.</p>
             <p>It works for a birthday dinner, a summer celebration, a product launch with taste, or an evening that simply deserves more than a restaurant table.</p>
-            <p>The terrace is bookable exclusively. No shared evenings. No half-measures.</p>
-            <p>All details — including availability — are shared on direct enquiry.</p>
+            <p>Open Tuesday to Saturday, 7 pm – 11 pm.</p>
+            <p>For up to 4 guests, <a href="#" onclick="umaiWidget.openWidget(); return false;" style="color:inherit; text-decoration:underline; text-underline-offset:3px;">book directly online</a>. For larger groups, use the enquiry form below — we'll confirm availability and all details personally. No shared evenings. No half-measures.</p>
           </div>
 
           <div class="body-text terrace__body" data-lang-pt>
             <p>Verde por todo o lado. Céu aberto. Um recanto escondido acima de uma das praças mais bonitas de Lisboa.</p>
             <p>A esplanada privada tem capacidade para até <strong>25 pessoas sentadas</strong> e até <strong>50 em pé</strong> — o cenário certo para aniversários, jantares íntimos, eventos de marca e celebrações que merecem ser recordadas.</p>
-            <p>Não há listas de preços aqui. Cada evento é tratado à medida. Disponibilidade, detalhes e tudo o mais partilhamos em contacto directo.</p>
+            <p>Aberta de terça a sábado, das 19h às 23h.</p>
+            <p>Até 4 pessoas, <a href="#" onclick="umaiWidget.openWidget(); return false;" style="color:inherit; text-decoration:underline; text-underline-offset:3px;">reserva directamente online</a>. Para grupos maiores, usa o formulário abaixo — confirmamos disponibilidade e todos os detalhes pessoalmente.
           </div>
 
           <div class="terrace__capacity">
@@ -219,14 +222,14 @@
         </div>
 
         <div class="terrace__image fade-in">
-          <img src="images/facade-exterior.jpg" alt="the FRONT bar exterior — Praça das Flores" loading="lazy">
+          <img src="images/terrace-evening.jpg" alt="the FRONT bar private terrace — Praça das Flores at night" loading="lazy">
         </div>
       </div>
 
       <!-- Enquiry Form -->
       <div class="enquiry-form fade-in" style="margin-top: 4rem;">
-        <h3 data-lang-en>Terrace Enquiry</h3>
-        <h3 data-lang-pt>Pedido de Reserva da Esplanada</h3>
+        <h3 data-lang-en>Group Enquiry <span style="font-size:0.65em; opacity:0.55; font-weight:400; letter-spacing:0.05em;">— 5 or more guests</span></h3>
+        <h3 data-lang-pt>Pedido para Grupos <span style="font-size:0.65em; opacity:0.55; font-weight:400; letter-spacing:0.05em;">— 5 ou mais pessoas</span></h3>
         <form id="terrace-form" action="mailto:noemi@thefrontbar-lisboa.com" method="post" enctype="text/plain" onsubmit="handleForm(event, 'terrace')">
           <div class="form-grid">
             <div class="form-field">
@@ -257,8 +260,8 @@
           <div style="margin-top: 1.5rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
             <button type="submit" class="btn btn--dark" data-lang-en>Send Enquiry</button>
             <button type="submit" class="btn btn--dark" data-lang-pt>Enviar Pedido</button>
-            <p class="form-note" data-lang-en>We'll respond within 24 hours. No pricing listed — all details shared on direct enquiry.</p>
-            <p class="form-note" data-lang-pt>Respondemos em 24 horas. Disponibilidade e preços partilhados em contacto directo.</p>
+            <p class="form-note" data-lang-en>We'll confirm your enquiry within 24 hours. Your reservation is not confirmed until you receive our reply.</p>
+            <p class="form-note" data-lang-pt>Confirmamos o teu pedido em 24 horas. A reserva só é válida após confirmação da nossa parte.</p>
           </div>
         </form>
         <div class="form-success" id="terrace-success">
@@ -280,10 +283,10 @@
           <p class="section-label" data-lang-pt>Como chegar</p>
 
           <blockquote class="location__editorial" data-lang-en>
-            Praça das Flores is one of Lisbon's quietest and most loved squares. the FRONT bar belongs here.
+            Praça das Flores is one of Lisbon's most charming and alive squares. the FRONT bar belongs here.
           </blockquote>
           <blockquote class="location__editorial" data-lang-pt>
-            A Praça das Flores é uma das praças mais silenciosas e mais queridas de Lisboa. the FRONT bar pertence aqui.
+            A Praça das Flores é uma das praças mais encantadoras e vivas de Lisboa. the FRONT bar pertence aqui.
           </blockquote>
 
           <div class="location__info">
@@ -306,14 +309,14 @@
               <span class="location__item-label" data-lang-en>Opening Hours</span>
               <span class="location__item-label" data-lang-pt>Horário</span>
               <span class="location__item-value" data-lang-en>
-                Tuesday — Sunday<br>
-                12:00 — 00:00<br>
-                <em style="opacity:0.5; font-size:0.8em;">Monday closed</em>
+                Bar: Tue–Sat · 7 pm–2 am<br>
+                Summer Terrace: Tue–Sat · 7 pm–11 pm<br>
+                <em style="opacity:0.5; font-size:0.8em;">Closed Sun &amp; Mon</em>
               </span>
               <span class="location__item-value" data-lang-pt>
-                Terça — Domingo<br>
-                12:00 — 00:00<br>
-                <em style="opacity:0.5; font-size:0.8em;">Fechado à Segunda</em>
+                Bar: Ter–Sáb · 19h–2h<br>
+                Esplanada: Ter–Sáb · 19h–23h<br>
+                <em style="opacity:0.5; font-size:0.8em;">Fechado Dom &amp; Seg</em>
               </span>
             </div>
             <div class="location__item">
@@ -370,13 +373,18 @@
             <p>Às vezes suave. Às vezes inesperado. Sempre intencional.</p>
           </div>
 
-          <a href="https://www.instagram.com/thefrontbarlx" target="_blank" rel="noopener" class="music__ig">
+          <div class="music__shotgun fade-in" style="margin: 2.5rem 0;">
+            <iframe src="https://shotgun.live/venues/the-front-bar?embedded=1&ui=dark" allow="payment" style="width:100%; height:800px; max-height:calc(100vh - 200px); border:0; border-radius: 4px;"></iframe>
+            <script src="https://shotgun.live/widget.js"></script>
+          </div>
+
+          <a href="https://www.instagram.com/thefrontbarlisboa/" target="_blank" rel="noopener" class="music__ig">
             <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
               <circle cx="12" cy="12" r="4"/>
               <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
             </svg>
-            @thefrontbarlx
+            @thefrontbarlisboa
           </a>
         </div>
       </div>
@@ -405,22 +413,22 @@
 
         <div class="cocktail-card fade-in">
           <div class="cocktail-card__img">
-            <img src="images/cocktail-espresso.jpg" alt="Espresso Martini — the FRONT bar" loading="lazy">
+            <img src="images/cocktail-agave.jpg" alt="The Coolest Agave — the FRONT bar" loading="lazy">
           </div>
-          <h3 class="cocktail-card__name">Coolest Agave</h3>
+          <h3 class="cocktail-card__name">The Coolest Agave</h3>
           <div class="cocktail-card__divider"></div>
-          <p class="cocktail-card__desc" data-lang-en>Tequila reposado, cold-pressed cucumber, lime, a whisper of salt and heat. It tastes like the first hour of a good evening — clear, clean, quietly confident.</p>
-          <p class="cocktail-card__desc" data-lang-pt>Agave limpo, frio até ao osso. Uma acidez que aparece devagar e fica. Para quem gosta de perceber o que está a beber.</p>
+          <p class="cocktail-card__desc" data-lang-en>Mezcal, vodka, mint liquor, agave and pineapple. Cool, sharp, and a little unexpected. The kind of drink you order once and then again.</p>
+          <p class="cocktail-card__desc" data-lang-pt>Mezcal, vodka, licor de menta, agave e ananás. Fresco e afiado. O género de bebida que se pede duas vezes.</p>
         </div>
 
         <div class="cocktail-card fade-in" style="transition-delay: 0.15s">
           <div class="cocktail-card__img">
-            <img src="images/cocktail-martini.jpg" alt="Dirty Martini — the FRONT bar" loading="lazy">
+            <img src="images/cocktail-vino.jpg" alt="Vino Vero — the FRONT bar" loading="lazy">
           </div>
-          <h3 class="cocktail-card__name">Vino Nero</h3>
+          <h3 class="cocktail-card__name">Vino Vero</h3>
           <div class="cocktail-card__divider"></div>
-          <p class="cocktail-card__desc" data-lang-en>Dark fruit and smoky mezcal pulled together with a touch of bittersweet liqueur and a curl of orange peel. Complex without trying to be. It arrives and you know this one is going to take a while.</p>
-          <p class="cocktail-card__desc" data-lang-pt>Escuro, fundo, inesperadamente suave. Começa como vinho, termina como outra coisa. Fica-se sem palavras — e pede-se outro.</p>
+          <p class="cocktail-card__desc" data-lang-en>Pisco, white wine, amaro, agave and citric solution. By Pedro Santos. Something between a cocktail and a glass of wine — and better than both.</p>
+          <p class="cocktail-card__desc" data-lang-pt>Pisco, vinho branco, amaro, agave e solução cítrica. Por Pedro Santos. Algures entre um cocktail e um copo de vinho — e melhor que os dois.</p>
         </div>
 
         <div class="cocktail-card fade-in" style="transition-delay: 0.3s">
@@ -449,8 +457,8 @@
       </div>
 
       <div class="cocktails__cta fade-in">
-        <a href="#" class="btn btn--light" data-lang-en>Full Menu (PDF)</a>
-        <a href="#" class="btn btn--light" data-lang-pt>Menu Completo (PDF)</a>
+        <a href="menu.pdf" target="_blank" rel="noopener" class="btn btn--light" data-lang-en>Full Menu</a>
+        <a href="menu.pdf" target="_blank" rel="noopener" class="btn btn--light" data-lang-pt>Menu Completo</a>
       </div>
 
     </div>
@@ -475,14 +483,12 @@
           <p class="aolado__subline" data-lang-pt>Cocktails frozen. Para a praça.</p>
 
           <div class="body-text aolado__body" data-lang-en>
-            <p>On the side of the building, a window opens directly onto Praça das Flores.</p>
             <p>No reservation. No table. No need to come inside. Step up to the window, order, and take it with you to the square.</p>
             <p>It's the same care in the glass — just handed to you from the other side of a wall, with the whole square in front of you.</p>
             <p>For Tuesday evenings and slow Sunday afternoons. For the regulars who've been coming for years and the visitors who stumbled in from the Bairro.</p>
           </div>
 
           <div class="body-text aolado__body" data-lang-pt>
-            <p>Na lateral do edifício, abre-se uma janela para a Praça das Flores.</p>
             <p>Sem reserva. Sem mesa. Só a praça, uma bebida bem fria, e as melhores pessoas para ver passar em Lisboa.</p>
             <p>É o bairro a funcionar como deve. Simples assim.</p>
           </div>
@@ -527,12 +533,12 @@
             <p>Nada de lifestyle curado. Só caras reais, conversas a sério, e a energia de uma cidade que sabe estar acordada.</p>
           </div>
 
-          <p class="people__sign" data-lang-en>the FRONT bar belongs to everyone who walks through the door.</p>
-          <p class="people__sign" data-lang-pt>the FRONT bar pertence a toda a gente que entra pela porta.</p>
+          <p class="people__sign" data-lang-en>Leading from The Front.</p>
+          <p class="people__sign" data-lang-pt>Leading from The Front.</p>
         </div>
 
         <div class="fade-in">
-          <img src="images/people-art.jpg" alt="Guests at the FRONT bar gallery evening" loading="lazy" style="width: 100%; height: 420px; object-fit: cover;">
+          <img src="images/people-crowd.jpg" alt="Guests at the FRONT bar" loading="lazy" style="width: 100%; height: 420px; object-fit: cover;">
         </div>
       </div>
 
@@ -593,7 +599,7 @@
 
         <div class="exhibit__visual fade-in">
           <div class="exhibit__frame">
-            <img src="images/atmosphere-flowers.jpg" alt="Atmospheric detail — the FRONT bar gallery" loading="lazy">
+            <img src="images/exhibit-gallery.jpg" alt="Exhibition opening at the FRONT bar" loading="lazy">
           </div>
         </div>
 
@@ -699,6 +705,71 @@
   </section>
 
 
+  <!-- ═══ 11. FOOD MENU ════════════════════════════════════ -->
+  <section id="menu" class="section section--cream" aria-label="Food Menu">
+    <div class="container">
+      <div class="fade-in" style="max-width: 760px; margin: 0 auto;">
+        <p class="section-label" data-lang-en>Kitchen</p>
+        <p class="section-label" data-lang-pt>Cozinha</p>
+        <h2 class="section-title" data-lang-en style="color: var(--navy); margin: 1.5rem 0;">the menu</h2>
+        <h2 class="section-title" data-lang-pt style="color: var(--navy); margin: 1.5rem 0;">o menu</h2>
+
+        <div class="menu__list" style="margin-top: 2.5rem;">
+
+          <div class="menu__item" style="padding: 1.5rem 0; border-bottom: 1px solid rgba(28,31,42,0.12);">
+            <h3 class="menu__name" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; color: var(--navy); margin: 0 0 0.4rem;">Homemade Fries</h3>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-en>Twice-fried potatoes, delicately seasoned with sea salt and sumac, served with our signature house sauce.</p>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-pt>Batatas fritas duas vezes, temperadas com sal marinho e sumagre, servidas com o nosso molho da casa.</p>
+          </div>
+
+          <div class="menu__item" style="padding: 1.5rem 0; border-bottom: 1px solid rgba(28,31,42,0.12);">
+            <h3 class="menu__name" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; color: var(--navy); margin: 0 0 0.4rem;">Eggplant Tartare <span style="opacity:0.5; font-size:0.8em;">(V)</span></h3>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-en>Smoky roasted eggplant, finely chopped with capers, chives, and lemon olive oil, finished with smoked sauce and crisp toast.</p>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-pt>Beringela assada fumada, picada com alcaparras, cebolinho e azeite de limão, com molho fumado e torrada estaladiça.</p>
+          </div>
+
+          <div class="menu__item" style="padding: 1.5rem 0; border-bottom: 1px solid rgba(28,31,42,0.12);">
+            <h3 class="menu__name" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; color: var(--navy); margin: 0 0 0.4rem;">Crispy Rice Tuna Tartare</h3>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-en>Sashimi-grade tuna tartare on crisp rice cakes with yuzu-soy dressing, sesame, and a touch of kimchi mayo.</p>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-pt>Tartare de atum sobre arroz estaladiço, com molho yuzu-soja, sésamo e mayo de kimchi.</p>
+          </div>
+
+          <div class="menu__item" style="padding: 1.5rem 0; border-bottom: 1px solid rgba(28,31,42,0.12);">
+            <h3 class="menu__name" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; color: var(--navy); margin: 0 0 0.4rem;">Spanish Tortilla</h3>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-en>A classic tortilla with slow-cooked potatoes and onions, finished with sriracha mayo and aged ham.</p>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-pt>Tortilha clássica com batata e cebola cozinhadas lentamente, com mayo sriracha e fiambre curado.</p>
+          </div>
+
+          <div class="menu__item" style="padding: 1.5rem 0; border-bottom: 1px solid rgba(28,31,42,0.12);">
+            <h3 class="menu__name" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; color: var(--navy); margin: 0 0 0.4rem;">Mushroom Parfait</h3>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-en>Slow-cooked mushrooms with soy, mirin, and butter, served with toasted sourdough.</p>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-pt>Cogumelos cozinhados lentamente com soja, mirin e manteiga, servidos com sourdough tostado.</p>
+          </div>
+
+          <div class="menu__item" style="padding: 1.5rem 0; border-bottom: 1px solid rgba(28,31,42,0.12);">
+            <h3 class="menu__name" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; color: var(--navy); margin: 0 0 0.4rem;">Katsu Sandwich</h3>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-en>Crispy panko chicken with cabbage slaw, green apple, and gochujang mayo on soft Japanese brioche.</p>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-pt>Frango panko estaladiço com coleslaw, maçã verde e mayo gochujang em brioche japonês.</p>
+          </div>
+
+          <div class="menu__item" style="padding: 1.5rem 0; border-bottom: 1px solid rgba(28,31,42,0.12);">
+            <h3 class="menu__name" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; color: var(--navy); margin: 0 0 0.4rem;">French Dip Sandwich</h3>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-en>Thin-sliced roast beef on a toasted baguette with melted provolone and caramelized onions, served with hot beef jus.</p>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-pt>Rosbife fatiado em baguete tostada com provolone derretido e cebola caramelizada, servido com jus de carne quente.</p>
+          </div>
+
+          <div class="menu__item" style="padding: 1.5rem 0;">
+            <h3 class="menu__name" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; color: var(--navy); margin: 0 0 0.4rem;">Tiramisu</h3>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-en>Espresso-soaked ladyfingers layered with mascarpone cream and cocoa.</p>
+            <p class="menu__desc body-text" style="margin: 0; opacity: 0.75;" data-lang-pt>Palitos embebidos em espresso com creme de mascarpone e cacau.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- ═══ FOOTER ════════════════════════════════════════════ -->
   <footer>
     <div class="container">
@@ -721,6 +792,7 @@
               <li><a href="#the-space" data-lang-en>The Space</a><a href="#the-space" data-lang-pt>O Espaço</a></li>
               <li><a href="#speakeasy" data-lang-en>The Speakeasy</a><a href="#speakeasy" data-lang-pt>O Speakeasy</a></li>
               <li><a href="#cocktails" data-lang-en>Cocktails</a><a href="#cocktails" data-lang-pt>Cocktails</a></li>
+              <li><a href="#menu" data-lang-en>Menu</a><a href="#menu" data-lang-pt>Menu</a></li>
               <li><a href="#ao-lado" data-lang-en>Ao Lado</a><a href="#ao-lado" data-lang-pt>Ao Lado</a></li>
               <li><a href="#music" data-lang-en>Music</a><a href="#music" data-lang-pt>Música</a></li>
             </ul>
@@ -733,7 +805,7 @@
               <li><a href="#terrace" data-lang-en>Private Terrace ★</a><a href="#terrace" data-lang-pt>Esplanada Privada ★</a></li>
               <li><a href="#kitchen" data-lang-en>Kitchen Rental ★</a><a href="#kitchen" data-lang-pt>Aluguer de Cozinha ★</a></li>
               <li><a href="#exhibit" data-lang-en>Exhibit With Us</a><a href="#exhibit" data-lang-pt>Expõe Connosco</a></li>
-              <li><a href="https://umai.io" target="_blank" rel="noopener" data-lang-en>Book a Table</a><a href="https://umai.io" target="_blank" rel="noopener" data-lang-pt>Reservar Mesa</a></li>
+              <li><a href="#" onclick="umaiWidget.openWidget(); return false;" data-lang-en>Book a Table</a><a href="#" onclick="umaiWidget.openWidget(); return false;" data-lang-pt>Reservar Mesa</a></li>
             </ul>
           </div>
 
@@ -743,7 +815,7 @@
             <ul>
               <li><a href="tel:+351912280037">+351 912 280 037</a></li>
               <li><a href="mailto:noemi@thefrontbar-lisboa.com">noemi@thefrontbar-lisboa.com</a></li>
-              <li><a href="https://www.instagram.com/thefrontbarlx" target="_blank" rel="noopener">@thefrontbarlx</a></li>
+              <li><a href="https://www.instagram.com/thefrontbarlisboa/" target="_blank" rel="noopener">@thefrontbarlisboa</a></li>
               <li><a href="#location" data-lang-en>Praça das Flores 44</a><a href="#location" data-lang-pt>Praça das Flores 44</a></li>
             </ul>
           </div>
@@ -751,15 +823,15 @@
       </div>
 
       <div class="footer__bottom">
-        <p data-lang-en>© 2026 the FRONT bar — Praça das Flores 44, Lisboa</p>
-        <p data-lang-pt>© 2026 the FRONT bar — Praça das Flores 44, Lisboa</p>
-        <a href="https://www.instagram.com/thefrontbarlx" target="_blank" rel="noopener" class="footer__ig" aria-label="Instagram @thefrontbarlx">
+        <p data-lang-en>© 2026 the FRONT bar — Praça das Flores 44, Lisboa · <a href="#" onclick="openModal('privacy')" style="opacity:0.6; text-decoration:underline;">Privacy Policy</a> · <a href="#" onclick="openModal('terms')" style="opacity:0.6; text-decoration:underline;">Terms &amp; Conditions</a></p>
+        <p data-lang-pt>© 2026 the FRONT bar — Praça das Flores 44, Lisboa · <a href="#" onclick="openModal('privacy')" style="opacity:0.6; text-decoration:underline;">Política de Privacidade</a> · <a href="#" onclick="openModal('terms')" style="opacity:0.6; text-decoration:underline;">Termos e Condições</a></p>
+        <a href="https://www.instagram.com/thefrontbarlisboa/" target="_blank" rel="noopener" class="footer__ig" aria-label="Instagram @thefrontbarlisboa">
           <svg viewBox="0 0 24 24">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
             <circle cx="12" cy="12" r="4"/>
             <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
           </svg>
-          @thefrontbarlx
+          @thefrontbarlisboa
         </a>
       </div>
     </div>
@@ -915,6 +987,72 @@
           closeMobile();
         }
       });
+    });
+  </script>
+
+  <!-- ═══ PRIVACY & TERMS MODALS ══════════════════════════ -->
+  <div id="modal-privacy" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(17,25,33,0.92); overflow-y:auto; padding:2rem 1rem;">
+    <div style="max-width:720px; margin:0 auto; background:var(--cream); color:var(--navy); padding:3rem 2.5rem; border-radius:4px; position:relative;">
+      <button onclick="closeModal('privacy')" style="position:absolute; top:1.5rem; right:1.5rem; background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--navy); line-height:1;">&times;</button>
+      <h2 style="font-family:var(--font-heading); font-size:2rem; margin-bottom:1.5rem;">Privacy Policy</h2>
+      <p style="opacity:0.5; font-size:0.85rem; margin-bottom:2rem;">Last updated: May 2026</p>
+      <div style="font-family:var(--font-body); font-size:0.95rem; line-height:1.7; opacity:0.85;">
+        <p>The Front Bar is committed to protecting your personal data in accordance with the GDPR and applicable Portuguese law.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">1. Who we are</h3>
+        <p>The Front Bar is a bar located at Praça das Flores 44, 1200-192 Lisboa, Portugal.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">2. Data we collect</h3>
+        <p>Contact form submissions (name, email, message). Booking requests (name, contact details, preferences). Usage data via cookies where consent has been given.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">3. Legal basis</h3>
+        <p>Consent for newsletters and non-essential cookies. Legitimate interests for enquiries. Contractual necessity for reservations.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">4. How we use your data</h3>
+        <p>To respond to enquiries. To send event updates (if subscribed). To manage bookings. To analyse website usage. We do not sell or share your data with third parties for marketing.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">5. Third-party processors</h3>
+        <p><strong>Umai</strong> — reservation management (<a href="https://umai.co" target="_blank">umai.co</a>). <strong>Google LLC</strong> — website analytics via Google Analytics.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">6. Your rights</h3>
+        <p>Access, correction, deletion, objection, and portability of your data. Lodge a complaint with the CNPD at <a href="https://www.cnpd.pt" target="_blank">cnpd.pt</a>.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">7. Contact</h3>
+        <p>The Front Bar · Praça das Flores 44, 1200-192 Lisboa · <a href="mailto:noemi@thefrontbar-lisboa.com">noemi@thefrontbar-lisboa.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-terms" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(17,25,33,0.92); overflow-y:auto; padding:2rem 1rem;">
+    <div style="max-width:720px; margin:0 auto; background:var(--cream); color:var(--navy); padding:3rem 2.5rem; border-radius:4px; position:relative;">
+      <button onclick="closeModal('terms')" style="position:absolute; top:1.5rem; right:1.5rem; background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--navy); line-height:1;">&times;</button>
+      <h2 style="font-family:var(--font-heading); font-size:2rem; margin-bottom:1.5rem;">Terms &amp; Conditions</h2>
+      <p style="opacity:0.5; font-size:0.85rem; margin-bottom:2rem;">Last updated: May 2026</p>
+      <div style="font-family:var(--font-body); font-size:0.95rem; line-height:1.7; opacity:0.85;">
+        <h3 style="font-family:var(--font-heading); margin: 0 0 0.5rem;">1. About us</h3>
+        <p>The Front Bar, Praça das Flores 44, 1200-192 Lisboa, Portugal.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">2. Use of this website</h3>
+        <p>You agree to use this website only for lawful purposes and in a way that does not infringe the rights of others.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">3. Intellectual property</h3>
+        <p>All content — text, images, logos, design — is the property of The Front Bar or its licensors, protected by copyright law.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">4. Events and programming</h3>
+        <p>Event details, lineups, and schedules are subject to change. We reserve the right to modify or cancel events at any time.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">5. Bookings and reservations</h3>
+        <p>Reservations are managed through Umai. Submitting a request does not constitute a confirmed reservation. By using the booking feature, you agree to Umai’s terms of service.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">6. Limitation of liability</h3>
+        <p>The Front Bar provides this website on an “as is” basis. To the fullest extent permitted by law, we exclude liability for any loss arising from your use of the website.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">7. Governing law</h3>
+        <p>These terms are governed by the laws of Portugal. Disputes subject to the exclusive jurisdiction of the courts of Lisbon.</p>
+        <h3 style="font-family:var(--font-heading); margin: 1.5rem 0 0.5rem;">8. Contact</h3>
+        <p>The Front Bar · Praça das Flores 44, 1200-192 Lisboa · <a href="mailto:noemi@thefrontbar-lisboa.com">noemi@thefrontbar-lisboa.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById('modal-' + id).style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal(id) {
+      document.getElementById('modal-' + id).style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') { closeModal('privacy'); closeModal('terms'); }
     });
   </script>
 
